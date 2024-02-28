@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+nav {
+    background-color: #333333;
+    color: white;
+    width: 160px; 
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 15px; 
+    padding-left: 15px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    position: relative;
+}
+
+nav ul ul{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #333;
+}
+
+nav li:hover > ul {
+    display: block;
+    background-color: transparent;
+}
+
+nav ul :hover {
+    background-color: skyblue; 
+    color: white; 
+}
+
+nav a::after {
+    content: '▶'; 
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.0s ease;
+}
+
+nav a:hover::after,
+nav a:focus::after,
+nav a:checked::after {
+    opacity: 1;
+}
+
+nav li ul li {
+    background-color: #555;
+    color: white;
+    width: 130%;
+    padding-left: 10px;
+    margin-left: 10px;
+}
+
+nav {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #333;
+}
+
+nav li ul li{
+    background-color: #555;
+    color: white;
+    width: 130%;
+    padding-left: 10px;
+    margin-left: 10px;
+}
+
+
+
